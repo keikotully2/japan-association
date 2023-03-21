@@ -11,6 +11,77 @@
 /* LAYOUT
 /*******************************************/
 
+/* An optional "content" section can be used to wrap your website so that it doesn't exceed a certain width for large screens */
+
+* {
+  box-sizing: border-box;
+}
+.content {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+/* Link styling */
+a {
+  text-decoration: none;
+}
+/* Header styling - structure */
+header {
+  display: flex;
+  align-items: center;
+}
+nav {
+  flex: 3;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  flex: 1;
+}
+/* Note: This is just a placeholder for a background image.
+Your hero section does NOT need a background image, or any images at all. You don't even need to include a hero section if you don't want to. */
+.hero {
+  background-image: url("images/background.png");
+}
+
+/* Body styling - structure */
+.about {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 20px 0px;
+}
+
+.about section {
+  flex: 1 1 350px;
+}
+
+/* Footer styling - structure */
+
+.products {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 20px 0px;
+}
+
+.products section {
+  flex: 1 1 31%;
+  min-width: 300px;
+}
+
+.services {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 20px 0px; 
+}
+
+.services section {
+  flex: 1 1 50%;
+  min-width: 400px;
+}
 
 
 /******************************************
